@@ -30,8 +30,8 @@
         {
             this.btnClose = new System.Windows.Forms.Button();
             this.btnOpnieuw = new System.Windows.Forms.Button();
-            this.bntNewPlayer = new System.Windows.Forms.Button();
-            this.btnStart = new System.Windows.Forms.Button();
+            this.btnNewPlayer = new System.Windows.Forms.Button();
+            this.btnStartGame = new System.Windows.Forms.Button();
             this.textBoxHighScore = new System.Windows.Forms.TextBox();
             this.textBoxHighScoreInput = new System.Windows.Forms.TextBox();
             this.textBoxScoreInput = new System.Windows.Forms.TextBox();
@@ -68,6 +68,7 @@
             this.pictureBoxSmallImage = new System.Windows.Forms.PictureBox();
             this.pictureBoxGalg = new System.Windows.Forms.PictureBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
+            this.btnStart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSmallImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGalg)).BeginInit();
             this.SuspendLayout();
@@ -99,33 +100,33 @@
             this.btnOpnieuw.Text = "Start opnieuw";
             this.btnOpnieuw.UseVisualStyleBackColor = false;
             // 
-            // bntNewPlayer
+            // btnNewPlayer
             // 
-            this.bntNewPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bntNewPlayer.BackColor = System.Drawing.Color.SeaShell;
-            this.bntNewPlayer.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntNewPlayer.ForeColor = System.Drawing.Color.OrangeRed;
-            this.bntNewPlayer.Location = new System.Drawing.Point(1224, 848);
-            this.bntNewPlayer.Name = "bntNewPlayer";
-            this.bntNewPlayer.Size = new System.Drawing.Size(321, 44);
-            this.bntNewPlayer.TabIndex = 3;
-            this.bntNewPlayer.Text = "Maak een nieuwe speler aan";
-            this.bntNewPlayer.UseVisualStyleBackColor = false;
-            this.bntNewPlayer.Click += new System.EventHandler(this.bntNewPlayer_Click);
+            this.btnNewPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNewPlayer.BackColor = System.Drawing.Color.SeaShell;
+            this.btnNewPlayer.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewPlayer.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnNewPlayer.Location = new System.Drawing.Point(1531, 840);
+            this.btnNewPlayer.Name = "btnNewPlayer";
+            this.btnNewPlayer.Size = new System.Drawing.Size(321, 44);
+            this.btnNewPlayer.TabIndex = 3;
+            this.btnNewPlayer.Text = "Maak een nieuwe speler aan";
+            this.btnNewPlayer.UseVisualStyleBackColor = false;
+            this.btnNewPlayer.Click += new System.EventHandler(this.bntNewPlayer_Click);
             // 
-            // btnStart
+            // btnStartGame
             // 
-            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStart.BackColor = System.Drawing.Color.Honeydew;
-            this.btnStart.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnStart.Location = new System.Drawing.Point(1224, 751);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(268, 54);
-            this.btnStart.TabIndex = 1;
-            this.btnStart.Text = "START EEN NIEUW SPEL";
-            this.btnStart.UseVisualStyleBackColor = false;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            this.btnStartGame.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStartGame.BackColor = System.Drawing.Color.Honeydew;
+            this.btnStartGame.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartGame.ForeColor = System.Drawing.Color.ForestGreen;
+            this.btnStartGame.Location = new System.Drawing.Point(1224, 751);
+            this.btnStartGame.Name = "btnStartGame";
+            this.btnStartGame.Size = new System.Drawing.Size(268, 54);
+            this.btnStartGame.TabIndex = 1;
+            this.btnStartGame.Text = "START EEN NIEUW SPEL";
+            this.btnStartGame.UseVisualStyleBackColor = false;
+            this.btnStartGame.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // textBoxHighScore
             // 
@@ -565,13 +566,27 @@
             this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.textBoxName.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxName.Location = new System.Drawing.Point(1561, 856);
+            this.textBoxName.Location = new System.Drawing.Point(1224, 848);
             this.textBoxName.MaxLength = 100;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(291, 30);
             this.textBoxName.TabIndex = 40;
             this.textBoxName.Text = "Type hier je naam";
             this.textBoxName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
+            // 
+            // btnStart
+            // 
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStart.BackColor = System.Drawing.Color.Honeydew;
+            this.btnStart.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.ForeColor = System.Drawing.Color.ForestGreen;
+            this.btnStart.Location = new System.Drawing.Point(1247, 751);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(225, 54);
+            this.btnStart.TabIndex = 41;
+            this.btnStart.Text = "S T A R T";
+            this.btnStart.UseVisualStyleBackColor = false;
             // 
             // HangmanClass
             // 
@@ -579,6 +594,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.pictureBoxSmallImage);
             this.Controls.Add(this.bntZ);
@@ -615,8 +631,8 @@
             this.Controls.Add(this.textBoxScoreInput);
             this.Controls.Add(this.textBoxHighScoreInput);
             this.Controls.Add(this.textBoxHighScore);
-            this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.bntNewPlayer);
+            this.Controls.Add(this.btnStartGame);
+            this.Controls.Add(this.btnNewPlayer);
             this.Controls.Add(this.btnOpnieuw);
             this.Controls.Add(this.btnClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -635,8 +651,8 @@
         #endregion
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnOpnieuw;
-        private System.Windows.Forms.Button bntNewPlayer;
-        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnNewPlayer;
+        private System.Windows.Forms.Button btnStartGame;
         private System.Windows.Forms.TextBox textBoxHighScore;
         private System.Windows.Forms.TextBox textBoxHighScoreInput;
         private System.Windows.Forms.TextBox textBoxScoreInput;
@@ -673,6 +689,7 @@
         private System.Windows.Forms.Button bntU;
         private System.Windows.Forms.PictureBox pictureBoxSmallImage;
         private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Button btnStart;
     }
 }
 
